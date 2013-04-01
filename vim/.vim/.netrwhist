@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/jiangks/htdocs/sample-ruby/www/sample-sinatra/routes'
+let g:netrw_dirhist_2='/home/jiangks/ruby'
+let g:netrw_dirhist_3='/home/jiangks/htdocs/sample-ruby/www/sample-sinatra/public/style'
+let g:netrw_dirhist_4='/home/jiangks/test'
+let g:netrw_dirhist_5='/home/jiangks/test/sequel/config'
+let g:netrw_dirhist_6='/home/jiangks/my_workspace/NOAH/www'
+let g:netrw_dirhist_7='/home/jiangks/my_workspace/NOAH/www/NOAH/routes'
+let g:netrw_dirhist_8='/home/jiangks/my_workspace'
