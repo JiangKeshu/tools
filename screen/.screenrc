@@ -1,0 +1,76 @@
+caption always "%{= wk} %-w%{= wr}%n %t%{-}%+w"
+
+defbce "on"
+
+multiuser on
+
+altscreen on
+
+vbell off
+
+autodetach on
+
+shell /bin/bash
+
+logfile "/home/ec2-user/.screen/screen-%Y%m%d-%n.log"
+
+deflog on
+
+shelltitle '$ |bash'
+
+msgwait 5
+
+msgminwait 1
+
+startup_message off
+
+escape ^z^z
+
+defscrollback 2000
+
+
+bind w eval 'echo "Operate window"' 'command -c operate'
+bind -c operate ^] command
+bind -c operate j eval 'focus down' 'command -c operate'
+bind -c operate k eval 'focus up' 'command -c operate'
+bind -c operate h eval 'focus left' 'command -c operate'
+bind -c operate l eval 'focus right' 'command -c operate'
+bind -c operate t eval 'focus top' 'command -c operate'
+bind -c operate b eval 'focus bottom' 'command -c operate'
+bind -c operate + eval 'resize -v +1' 'command -c operate'
+bind -c operate - eval 'resize -v -1' 'command -c operate'
+bind -c operate > eval 'resize -h +1' 'command -c operate'
+bind -c operate < eval 'resize -h -1' 'command -c operate'
+bind -c operate = eval 'resize -v =' 'command -c operate'
+bind -c operate + eval 'resize -h =' 'command -c operate'
+bind -c operate s eval 'split' 'command -c operate'
+bind -c operate c eval 'screen' 'command -c operate'
+bind -c operate x eval 'remove' 'command -c operate'
+bind -c operate v eval 'split -v' 'command -c operate'
+bind -c operate 0 eval 'select 0' 'command -c operate'
+bind -c operate 1 eval 'select 1' 'command -c operate'
+bind -c operate 2 eval 'select 2' 'command -c operate'
+bind -c operate 3 eval 'select 3' 'command -c operate'
+bind -c operate 4 eval 'select 4' 'command -c operate'
+bind -c operate 5 eval 'select 5' 'command -c operate'
+bind -c operate 6 eval 'select 6' 'command -c operate'
+bind -c operate 7 eval 'select 7' 'command -c operate'
+bind -c operate 8 eval 'select 8' 'command -c operate'
+bind -c operate 9 eval 'select 9' 'command -c operate'
+
+
+bind x remove
+bind j eval 'focus down'
+bind k eval 'focus up'
+bind h eval 'focus left'
+bind l eval 'focus right'
+bind + eval 'resize -v +1'
+bind - eval 'resize -v -1'
+bind > eval 'resize -h +1'
+bind < eval 'resize -h -1'
+bind v eval 'split -v' focus screen
+bind s eval 'split' focus screen
+bind = eval 'resize -v ='
+bind + eval 'resize -h +'
+
+bind ^h

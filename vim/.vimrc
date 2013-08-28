@@ -45,7 +45,7 @@ inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
-  set mouse=a
+  set mouse-=a
 endif
 
 " Switch syntax highlighting on, when the terminal has colors
@@ -101,7 +101,7 @@ endif
 "map <silent> <F5> :TlistToggle<CR> 
 
 filetype plugin on
-let Tlist_Ctags_Cmd = '~/bin/ctags'
+let Tlist_Ctags_Cmd = 'ctags'
 "let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 "let Tlist_Use_Right_Window = 1
