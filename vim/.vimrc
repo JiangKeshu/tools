@@ -101,7 +101,7 @@ endif
 "map <silent> <F5> :TlistToggle<CR> 
 
 filetype plugin on
-let Tlist_Ctags_Cmd = 'ctags'
+let Tlist_Ctags_Cmd = '~/local/ctags/bin/ctags'
 "let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 "let Tlist_Use_Right_Window = 1
