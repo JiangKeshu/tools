@@ -17,3 +17,4 @@ cd ${tool_home}/vim && cp -r .vim* ~/
 
 #Install .screenrc
 cd ${tool_home}/screen && cp .screenrc ~/
+cat .bashrc >> ~/.bashrc
