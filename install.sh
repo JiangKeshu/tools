@@ -9,7 +9,7 @@ mkdir -p ~/tmp/vim_bak
 
 #Install ctags
 mkdir -p ${tool_home}/src && cd ${tool_home}/src && wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
-tar -zxvf ctags-5.8.tar.gz && cd ctags-5.8.tar.gz
+tar -zxvf ctags-5.8.tar.gz && cd ctags-5.8
 ./configure --prefix=${home}/local/ctags && make && make install
 
 #Install vim plugin and conf
