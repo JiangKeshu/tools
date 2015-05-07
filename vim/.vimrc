@@ -123,6 +123,7 @@ let NERDTreeWinSize=31
 "autocmd VimEnter * NERDTree
 "autocmd VimEnter * if !argc() | NERDTree | endif
 set nu
+set paste
 
 "winmanager setting
 let g:winManagerWindowLayout='NERDTree|TagList'
