@@ -145,22 +145,22 @@ set shiftwidth=2
 
 set cursorline
 
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { {}<ESC>i
-:inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap < <><ESC>i
-:inoremap > <c-r>=ClosePair('>')<CR>
-           
-function ClosePair(char)
-	if getline('.')[col('.') - 1] == a:char
-		return "<Right>"
-	else
-		return a:char
-	endif
-endfunction
+":inoremap ( ()<ESC>i
+":inoremap ) <c-r>=ClosePair(')')<CR>
+":inoremap { {}<ESC>i
+":inoremap } <c-r>=ClosePair('}')<CR>
+":inoremap [ []<ESC>i
+":inoremap ] <c-r>=ClosePair(']')<CR>
+":inoremap < <><ESC>i
+":inoremap > <c-r>=ClosePair('>')<CR>
+"           
+"function ClosePair(char)
+"	if getline('.')[col('.') - 1] == a:char
+"		return "<Right>"
+"	else
+"		return a:char
+"	endif
+"endfunction
 
 hi Pmenu	guifg=black guibg=lightgrey	ctermfg=black ctermbg=lightgrey
 hi PmenuSel	guifg=black guibg=brown	ctermfg=black ctermbg=brown
