@@ -128,7 +128,7 @@ set paste
 "winmanager setting
 let g:winManagerWindowLayout='NERDTree|TagList'
 let g:winManagerWidth = 40
-let g:AutoOpenWinManager = 1
+let g:AutoOpenWinManager = 0
 map <silent> <F5> :WMToggle<CR>
 
 map <silent> <F6> :BufExplorer<CR>
